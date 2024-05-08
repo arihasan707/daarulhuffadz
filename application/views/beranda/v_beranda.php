@@ -87,16 +87,41 @@
                 data-swiper-autoplay="9000">
                 <div class="slide-bg" data-background="<?= base_url(); ?>assets/frontend/img/slider/slider-bg-2.jpg">
                 </div>
+                <div class="tp-slider z-index">
+                    <h5 class="tp-slider-subtitle common-yellow-shape w-80 mb-35" data-animation="fadeInUp"
+                        data-delay=".5s" style="animation-delay: 0.5s;">
+                        #Pondok Pesantren Tahfidz Favorit</h5>
+                    <h2 class="tp-slider-title" data-animation="fadeInUp" data-delay=".8s"
+                        style="animation-delay: 0.8s;">Mencetak</h2>
+                    <h2 class="tp-slider-title1" data-animation="fadeInUp" data-delay=".8s"
+                        style="animation-delay: 0.8s;"> Generasi Penghafal </h2>
+                    <h2 class="tp-slider-title1 mb-35" data-animation="fadeInUp" data-delay=".8s"
+                        style="animation-delay: 0.8s;"> Al-Qur'an </h2>
+                    <div class="tp-slider-btn pndaftar" data-animation="fadeInUp" data-delay="1.1s"
+                        style="animation-delay: 1.1s;">
+                        <a href="https://www.daarulhuffadz.com/pendaftaran/" class="theme-btn"><i
+                                class="flaticon-enter"></i> Daftar Sekarang</a>
+                    </div>
+                </div>
             </div>
             <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide"
                 data-swiper-autoplay="9000">
                 <div class="slide-bg" data-background="<?= base_url(); ?>assets/frontend/img/slider/slider-bg-3.jpg">
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-
-                        </div>
+                <div class="tp-slider z-index">
+                    <h5 class="tp-slider-subtitle common-yellow-shape w-80 mb-35" data-animation="fadeInUp"
+                        data-delay=".5s" style="animation-delay: 0.5s;">
+                        #Pondok Pesantren Tahfidz Favorit</h5>
+                    <h2 class="tp-slider-title" data-animation="fadeInUp" data-delay=".8s"
+                        style="animation-delay: 0.8s;">Tempat Terbaik </h2>
+                    <h2 class="tp-slider-title1" data-animation="fadeInUp" data-delay=".8s"
+                        style="animation-delay: 0.8s;"> Untuk Menghafal </h2>
+                    <h2 class="tp-slider-title mb-35" data-animation="fadeInUp" data-delay=".8s"
+                        style="animation-delay: 0.8s;"> Al-Qur'an </h2>
+                    <div class="tp-slider-btn pndaftar" data-animation="fadeInUp" data-delay="1.1s"
+                        style="animation-delay: 1.1s;">
+                        <a href="https://www.daarulhuffadz.com/pendaftaran" class="theme-btn"><i
+                                class="flaticon-enter"></i> Daftar Sekarang</a>
                     </div>
                 </div>
             </div>

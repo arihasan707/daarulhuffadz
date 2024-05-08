@@ -95,6 +95,22 @@
 	}
 }
 
+@media only screen and (min-width:220px) and (max-width:768px) {
+	.pndaftar a {
+		left: 35px;
+   	    top: -20px;
+	}
+	.tp-slider-btn {
+		justify-content: center;
+	}
+	.common-yellow-shape:before {
+		left: unset;
+	}
+	.tp-slider-subtitle{
+		justify-content: center;
+	}
+}
+
 	
 
 
