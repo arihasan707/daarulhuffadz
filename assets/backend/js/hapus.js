@@ -16,7 +16,7 @@ $(document).ready(function() {
             if (result.isConfirmed) {
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost/daarul/admin_satu/hapus_pmb/" + id,
+                    url: "https://daarulhuffadz.com/admin_satu/hapus_pmb/" + id,
                     data: {id:id
                     },
                     success: function () {
@@ -50,7 +50,7 @@ $(document).ready(function() {
             if (result.isConfirmed) {
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost/daarul/admin_tiga/hapus_pmb/" + id,
+                    url: "https://daarulhuffadz.com/admin_tiga/hapus_pmb/" + id,
                     data: {id:id
                     },
                     success: function () {
@@ -84,7 +84,7 @@ $(document).ready(function() {
             if (result.isConfirmed) {
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost/daarul/admin_dua/hapus_pmb_institute/" + id,
+                    url: "https://daarulhuffadz.com/admin_dua/hapus_pmb_institute/" + id,
                     data: {id:id
                     },
                     success: function () {
@@ -118,7 +118,7 @@ $(document).ready(function() {
             if (result.isConfirmed) {
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost/daarul/admin_dua/hapus_pmb_boarding/" + id,
+                    url: "https://daarulhuffadz.com/admin_dua/hapus_pmb_boarding/" + id,
                     data: {id:id
                     },
                     success: function () {
@@ -152,7 +152,7 @@ $(document).ready(function() {
             if (result.isConfirmed) {
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost/daarul/staff_karyawan/hapus_flayer/"+ id,
+                    url: "https://daarulhuffadz.com/staff_karyawan/hapus_flayer/"+ id,
                     data: {id:id
                     },
                     success: function () {

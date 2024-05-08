@@ -9,7 +9,7 @@ function kabAjax() {
 		var id = $(this).val();
 		$.ajax({
 			type: "POST",
-			url: "http://localhost/daarul/pmb_online/get_kabupaten",
+			url: "https://daarulhuffadz.com/pmb_online/get_kabupaten",
 			data: {
 				id: id,
 			},
@@ -28,7 +28,7 @@ function kecAjax() {
 		// console.log(id_kec)
 		$.ajax({
 			type: "POST",
-			url: "http://localhost/daarul/pmb_online/get_kecamatan",
+			url: "https://daarulhuffadz.com/pmb_online/get_kecamatan",
 			data: {
 				id: id,
 			},
