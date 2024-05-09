@@ -29,7 +29,7 @@
                                         style="animation-delay: 0.8s;"> Al-Qur'an </h2>
                                     <div class="tp-slider-btn pndaftar" data-animation="fadeInUp" data-delay="1.1s"
                                         style="animation-delay: 1.1s;">
-                                        <a href="https://www.daarulhuffadz.com/pendaftaran/" class="theme-btn"><i
+                                        <a href="https://www.daarulhuffadz.com/pmb_online/" class="theme-btn"><i
                                                 class="flaticon-enter"></i> Daftar Sekarang</a>
                                     </div>
                                 </div>
@@ -65,7 +65,7 @@
                                         style="animation-delay: 0.8s;"> Al-Qur'an </h2>
                                     <div class="tp-slider-btn pndaftar" data-animation="fadeInUp" data-delay="1.1s"
                                         style="animation-delay: 1.1s;">
-                                        <a href="https://www.daarulhuffadz.com/pendaftaran" class="theme-btn"><i
+                                        <a href="https://www.daarulhuffadz.com/pmb_online/" class="theme-btn"><i
                                                 class="flaticon-enter"></i> Daftar Sekarang</a>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                         style="animation-delay: 0.8s;"> Al-Qur'an </h2>
                     <div class="tp-slider-btn pndaftar" data-animation="fadeInUp" data-delay="1.1s"
                         style="animation-delay: 1.1s;">
-                        <a href="https://www.daarulhuffadz.com/pendaftaran/" class="theme-btn"><i
+                        <a href="https://www.daarulhuffadz.com/pmb_online/" class="theme-btn"><i
                                 class="flaticon-enter"></i> Daftar Sekarang</a>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                         style="animation-delay: 0.8s;"> Al-Qur'an </h2>
                     <div class="tp-slider-btn pndaftar" data-animation="fadeInUp" data-delay="1.1s"
                         style="animation-delay: 1.1s;">
-                        <a href="https://www.daarulhuffadz.com/pendaftaran" class="theme-btn"><i
+                        <a href="https://www.daarulhuffadz.com/pmb_online/" class="theme-btn"><i
                                 class="flaticon-enter"></i> Daftar Sekarang</a>
                     </div>
                 </div>
