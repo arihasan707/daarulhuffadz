@@ -62,7 +62,7 @@
                                 echo "<span class='badge rounded-pill bg-danger'>Promo PMB</span>";
                                 break;
                                 default:
-                                echo "<a data-bs-toggle='modal' data-bs-target='#bukti_tf".$s->id_pmb_karantina."'
+                                echo "<a data-bs-toggle='modal' data-bs-target='#bukti_tf".$s->id_pmb."'
                                 class='btn btn-secondary btn-sm'><i class='bi bi-eye-fill'>Lihat</i></a>";
                                 break;
                             }
