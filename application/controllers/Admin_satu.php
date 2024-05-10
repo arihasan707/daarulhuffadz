@@ -69,7 +69,7 @@ class Admin_satu extends CI_Controller
 		$data["detail"] = $this->app->get_detail_pmb($id);
 		$title =  [
 			'title' => "Admin 1 - Pesantren Tahfidz Daarul Huffadz Indonesia",
-			'validasi' => $this->app->get_where_notif_admin_1('tbl_pmb_karantina',['notif'=> '0'])->result(),
+			'validasi' => $this->app->get_where('tbl_pmb_karantina',['notif'=> '0'])->result(),
 			'validasi_limit' => $this->app->get_notif_limit('tbl_pmb_karantina',['notif'=> '0'])->result()
 		];
 		$this->load->view('admin_1/v_header', $title);
