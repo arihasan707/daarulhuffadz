@@ -23,13 +23,9 @@ class Admin_satu extends CI_Controller
 			'validasi' => $this->app->get_where('tbl_pmb_karantina',['notif'=> '0'])->result(),
 			'validasi_limit' => $this->app->get_notif_limit('tbl_pmb_karantina',['notif'=> '0'])->result()
 		];
-		$data = [
-		'jml_data_per_admin' => count($this->app->pmb_karantina()->result()),
-		'jml_data_pendaftaran' => count($this->app->get_daftar()->result())	
-		];
 		$this->load->view('admin_1/v_header' , $title);
 		$this->load->view('admin_1/v_nav', $title);
-		$this->load->view('admin_1/v_dashboard',$data);
+		$this->load->view('admin_1/v_dashboard');
 		$this->load->view('admin_1/v_footer');
 	}
 	

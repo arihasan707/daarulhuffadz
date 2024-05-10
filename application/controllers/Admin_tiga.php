@@ -19,13 +19,9 @@ class Admin_tiga extends CI_Controller
 			'validasi' => $this->app->get_where('tbl_pmb_po',['notif'=> '0'])->result(),
 			'validasi_limit' => $this->app->get_notif_limit('tbl_pmb_po',['notif'=> '0'])->result()
 		];
-		$data = [
-		'jml_data_per_admin' => count($this->app->pmb_po()->result()),
-		'jml_data_pendaftaran' => count($this->app->get_daftar()->result())	
-		];
 		$this->load->view('admin_3/v_header' , $title);
 		$this->load->view('admin_3/v_nav');
-		$this->load->view('admin_3/v_dashboard',$data);
+		$this->load->view('admin_3/v_dashboard');
 		$this->load->view('admin_3/v_footer');
 	}
 	
@@ -65,8 +61,8 @@ class Admin_tiga extends CI_Controller
 		$data["detail"] = $this->app->get_where('tbl_pmb_po' , ['id_pmb_po' => $id]);
 		$title =  [
 			'title' => "Admin 3 - Pesantren Tahfidz Daarul Huffadz Indonesia",
-			'validasi' => $this->app->get_where_notif_admin_3('tbl_pendaftaran',['notif'=> '0'])->result(),
-			'validasi_limit' => $this->app->get_notif_limit('tbl_pendaftaran',['notif'=> '0'])->result()
+			'validasi' => $this->app->get_where('tbl_pmb_po',['notif'=> '0'])->result(),
+			'validasi_limit' => $this->app->get_notif_limit('tbl_pmb_po',['notif'=> '0'])->result()
 		];
 		$this->load->view('admin_3/v_header', $title);
 		$this->load->view('admin_3/v_nav');

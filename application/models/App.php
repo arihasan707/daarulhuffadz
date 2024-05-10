@@ -48,14 +48,6 @@ class App extends CI_Model
         return $this->db->get();
     }
 
-    function get_daftar()
-    {
-        $this->db->select('*');
-        $this->db->from('tbl_pendaftaran');
-        $this->db->where(['status'=> '1']);
-        return $this->db->get();
-    }
-
     function insert($table, $data)
     {
         $this->db->insert($table, $data);
@@ -143,19 +135,6 @@ class App extends CI_Model
         return $this->db->get();
     }
     
-    function get_seleksi_2()
-    {
-        $this->db->select('*');
-        $this->db->from('tbl_pendaftaran');
-        $this->db->where('status', '0');
-        $this->db->group_start();
-        $this->db->or_where('prog','DH Institute S1 Double Gelar');
-        $this->db->or_where('prog','SMP & SMA Tahfidz Boarding');
-        $this->db->group_end();
-        $this->db->order_by('id_pendaftaran', 'desc');
-        return $this->db->get();
-    }
-    
     function pmb_po()
     {
         $this->db->select('*');
@@ -179,54 +158,6 @@ class App extends CI_Model
         $this->db->order_by('status', 'asc');
         return $this->db->get();
     }
-    
-    // function get_data_pendaftaran()
-    // {
-    //     $this->db->select('*');
-    //     $this->db->from('tbl_pendaftaran');
-    //     $this->db->where('status', '1');
-    //     $this->db->order_by('id_pendaftaran', 'desc');
-    //     return $this->db->get();
-    // }
-    
-    // function get_data_admin_1()
-    // {
-    //     $this->db->select('*');
-    //     $this->db->from('tbl_pendaftaran');
-    //     $this->db->where('status', '1');
-    //     $this->db->group_start();
-    //     $this->db->or_where('prog',"Karantina Qur'an 1 Tahun");
-    //     $this->db->or_where('prog',"Karantina Qur'an 6 Bulan");
-    //     $this->db->or_where('prog',"Dauroh Qur'an 30 Hari");
-    //     $this->db->group_end();
-    //     $this->db->order_by('id_pendaftaran', 'desc');
-    //     return $this->db->get();
-    // }
-    
-    // function get_data_admin_2()
-    // {
-    //     $this->db->select('*');
-    //     $this->db->from('tbl_pendaftaran');
-    //     $this->db->where('status', '1');
-    //     $this->db->group_start();
-    //     $this->db->or_where('prog','DH Institute S1 Double Gelar');
-    //     $this->db->or_where('prog','SMP & SMA Tahfidz Boarding');
-    //     $this->db->group_end();
-    //     $this->db->order_by('id_pendaftaran', 'desc');
-    //     return $this->db->get();
-    // }
-    
-    // function get_data_admin_3()
-    // {
-    //     $this->db->select('*');
-    //     $this->db->from('tbl_pendaftaran');
-    //     $this->db->where('status', '1');
-    //     $this->db->group_start();
-    //     $this->db->or_where('prog','Tahfidz Online');
-    //     $this->db->group_end();
-    //     $this->db->order_by('id_pendaftaran', 'desc');
-    //     return $this->db->get();
-    // }
 
     function get_detail_pmb($id)
     {

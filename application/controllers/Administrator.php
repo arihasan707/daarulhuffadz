@@ -267,15 +267,6 @@ class Administrator extends CI_Controller
 		$this->load->view('admin/v_footer');
 	}
 	
-	public function konfirmasi($id)
-	{
-		$data = [
-		'status'=>'1'	
-		];
-		$this->app->update('tbl_pendaftaran',$data,['id_pendaftaran'=> $id]);
-		redirect('administrator/proses_validasi');
-	}
-	
 	public function data_pendaftaran()
 	{
 		$data["seleksi"] = $this->app->get_data_pendaftaran()->result();
@@ -287,30 +278,6 @@ class Administrator extends CI_Controller
 		$this->load->view('admin/pendaftaran/data_pendaftaran/v_data_pendaftaran', $data);
 		$this->load->view('admin/v_footer');
 	}
-
-	public function hapus_validasi($id)
-	{
-		// $id = $this->input->post('id');
-		$foto = trim($this->input->post('foto'));
-		$ktp = trim($this->input->post('ktp'));
-		$ijazah = trim($this->input->post('ijazah'));
-		$rekaman = trim($this->input->post('rekaman'));
-
-
-		$path1 = './assets/backend/upload/' . $foto;
-		unlink($path1);
-		$path2 = './assets/backend/upload/' . $ktp;
-		unlink($path2);
-		$path3 = './assets/backend/upload/' . $ijazah;
-		unlink($path3);
-		$path4 = './assets/backend/upload/' . $rekaman;
-		unlink($path4);
-
-		$this->app->delete('tbl_pendaftaran', ['id_pendaftaran' => $id]);
-		$this->session->set_flashdata('success', 'Di Hapus');
-		redirect('administrator/proses_validasi');
-	}
-
 	
 	public function detail_data($id)
 	{
@@ -386,11 +353,6 @@ class Administrator extends CI_Controller
 		$this->load->view('admin/v_footer');
 	}
 	
-	public function excel(){
-	    $data['pndaftaran'] = $this->app->get_all('tbl_pendaftaran');
-	    $this->load->view('admin/pendaftaran/v_excel', $data);
-	}
-
 	public function keluar()
 	{
 		$this->session->sess_destroy();

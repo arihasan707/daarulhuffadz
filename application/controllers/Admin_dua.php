@@ -16,16 +16,12 @@ class Admin_dua extends CI_Controller
 	{
 		$title =  [
 			'title' => "Admin 2 - Pesantren Tahfidz Daarul Huffadz Indonesia",
-			'validasi' => $this->app->get_where('tbl_pendaftaran',['notif'=> '0'])->result(),
-			'validasi_limit' => $this->app->get_notif_limit('tbl_pendaftaran',['notif'=> '0'])->result()
-		];
-		$data = [
-		// 'jml_data_per_admin' => count($this->app->get_data_admin_2()->result()),
-		'jml_data_pendaftaran' => count($this->app->get_daftar()->result())	
+			'validasi' => $this->app->get_where('tbl_pmb_boarding',['notif'=> '0'])->result(),
+			'validasi_limit' => $this->app->get_notif_limit('tbl_pmb_boarding',['notif'=> '0'])->result()
 		];
 		$this->load->view('admin_2/v_header' , $title);
 		$this->load->view('admin_2/v_nav');
-		$this->load->view('admin_2/v_dashboard',$data);
+		$this->load->view('admin_2/v_dashboard');
 		$this->load->view('admin_2/v_footer');
 	}
 
@@ -96,8 +92,8 @@ class Admin_dua extends CI_Controller
 		$data["detail"] = $this->app->get_detail_institute($id);
 		$title =  [
 			'title' => "Admin 2 - Pesantren Tahfidz Daarul Huffadz Indonesia",
-			'validasi' => $this->app->get_where('tbl_pendaftaran',['notif'=> '0'])->result(),
-			'validasi_limit' => $this->app->get_notif_limit('tbl_pendaftaran',['notif'=> '0'])->result()
+			'validasi' => $this->app->get_where('tbl_pmb_institute',['notif'=> '0'])->result(),
+			'validasi_limit' => $this->app->get_notif_limit('tbl_pmb_institute',['notif'=> '0'])->result()
 		];
 		$this->load->view('admin_2/v_header', $title);
 		$this->load->view('admin_2/v_nav');
@@ -110,8 +106,8 @@ class Admin_dua extends CI_Controller
 		$data["detail"] = $this->app->get_detail_boarding($id);
 		$title =  [
 			'title' => "Admin 2 - Pesantren Tahfidz Daarul Huffadz Indonesia",
-			'validasi' => $this->app->get_where('tbl_pendaftaran',['notif'=> '0'])->result(),
-			'validasi_limit' => $this->app->get_notif_limit('tbl_pendaftaran',['notif'=> '0'])->result()
+			'validasi' => $this->app->get_where('tbl_pmb_boarding',['notif'=> '0'])->result(),
+			'validasi_limit' => $this->app->get_notif_limit('tbl_pmb_boarding',['notif'=> '0'])->result()
 		];
 		$this->load->view('admin_2/v_header', $title);
 		$this->load->view('admin_2/v_nav');
