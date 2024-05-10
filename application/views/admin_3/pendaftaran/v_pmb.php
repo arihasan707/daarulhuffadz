@@ -65,7 +65,6 @@
                             ?>
                         </td>
                         <td>
-                        <td>
                             <?php
                             switch($s->bukti_tf){
                                 case 'promo':
@@ -77,7 +76,6 @@
                                 break;
                             }
                             ?>
-                        </td>
                         </td>
                         <td>
                             <a href="<?= base_url('admin_tiga/detail_pmb/' . $s->id_pmb_po) ?>"
