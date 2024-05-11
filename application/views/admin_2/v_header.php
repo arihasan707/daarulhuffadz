@@ -79,8 +79,6 @@
                             echo 'Tidak ada notifikasi terbaru';
                         }
                         ?>
-                            <a href="<?= base_url('admin_dua/pmb_online')?>"><span
-                                    class="badge rounded-pill bg-primary p-2 ms-2">Lihat Semua</span></a>
                         </li>
                         <?php if($validasi)  { ?>
                         <?php foreach($validasi_limit as $v ) { ?>
