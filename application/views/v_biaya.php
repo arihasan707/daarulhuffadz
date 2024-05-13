@@ -26,19 +26,22 @@
                                     <div class="mb-2 row d-flex justify-content-center">
                                         <label class="col-sm-4 col-form-label">Nama</label>
                                         <div class="col-sm-6">
-                                            <input type="text" name="nama" class="form-control" required>
+                                            <input type="text" name="nama" placeholder="Masukan nama"
+                                                class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="mb-2 row d-flex justify-content-center">
                                         <label class="col-sm-4 col-form-label">Kota Tinggal</label>
                                         <div class="col-sm-6">
-                                            <input type="text" name="kota" class="form-control" required>
+                                            <input type="text" name="kota" placeholder="Masukan kota tinggal"
+                                                class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="mb-2 row d-flex justify-content-center">
                                         <label class="col-sm-4 col-form-label">Nomor Whatsapp</label>
                                         <div class="col-sm-6">
-                                            <input type="number" name="wa" class="form-control" required>
+                                            <input type="number" name="wa" placeholder="Masukan nomor whatsapp"
+                                                class="form-control" required>
                                             <p>
                                                 Format 08123....
                                                 Silakan masukkan nomor Whatsapp aktif.</p>
