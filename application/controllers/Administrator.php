@@ -17,12 +17,9 @@ class Administrator extends CI_Controller
 		$title =  [
 			'title' => "Administrator - Pesantren Tahfidz Daarul Huffadz Indonesia",
 		];
-		$data = [
-		'jml_data_pendaftaran' => count($this->app->get_daftar()->result())	
-		];
 		$this->load->view('admin/v_header' , $title);
 		$this->load->view('admin/v_nav', $title);
-		$this->load->view('admin/dashboard/v_dashboard',$data);
+		$this->load->view('admin/dashboard/v_dashboard');
 		$this->load->view('admin/v_footer');
 	}
 	
