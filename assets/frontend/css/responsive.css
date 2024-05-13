@@ -111,6 +111,12 @@
 	}
 }
 
+@media only screen and (min-width:220px) and (max-width:425px) {
+	.tp-slider h2 {
+		font-size: 35px;
+	}
+}
+
 	
 
 
