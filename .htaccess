@@ -6,4 +6,4 @@ Options -Indexes
 
 RewriteCond %{HTTP_HOST} ^www\.daarulhuffadz\.com [NC]
 
-RewriteRule ^(.*)$ http://daarulhuffadz.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://daarulhuffadz.com/$1 [L,R=301]
