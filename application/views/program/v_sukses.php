@@ -8,7 +8,7 @@
                 <div class="col-lg-6 col-xl-6">
                     <div class="card sukses-bayar text-center">
                         <h4 class="text-center pt-3">Pendaftaran Berhasil!</h4>
-                        <p><?=$tempdata['created_at']?> WIB</p>
+                        <p><?= date('d M Y, H:i:s',strtotime($tempdata['created_at']))?> WIB</p>
                         <?=$id?>
                         <div class="col-lg-12 d-flex justify-content-center">
                             <dotlottie-player
@@ -34,7 +34,7 @@
                 <div class="col-lg-6 col-xl-6">
                     <div class="card sukses-bayar text-center">
                         <h4 class="text-center pt-3">Pendaftaran Berhasil!</h4>
-                        <p><?=$tempdata['created_at']?> WIB</p>
+                        <p><?= date('d M Y, H:i:s',strtotime($tempdata['created_at']))?> WIB</p>
                         <?=$id?>
                         <div class="col-lg-12 d-flex justify-content-center">
                             <dotlottie-player
@@ -60,7 +60,7 @@
                 <div class="col-lg-6 col-xl-6">
                     <div class="card sukses-bayar text-center">
                         <h4 class="text-center pt-3">Pendaftaran Berhasil!</h4>
-                        <p><?=$tempdata['created_at']?> WIB</p>
+                        <p><?= date('d M Y, H:i:s',strtotime($tempdata['created_at']))?> WIB</p>
                         <?=$id?>
                         <div class="col-lg-12 d-flex justify-content-center">
                             <dotlottie-player
@@ -86,7 +86,7 @@
                 <div class="col-lg-6 col-xl-6">
                     <div class="card sukses-bayar text-center">
                         <h4 class="text-center pt-3">Pendaftaran Berhasil!</h4>
-                        <p><?=$tempdata['created_at']?> WIB</p>
+                        <p><?= date('d M Y, H:i:s',strtotime($tempdata['created_at']))?> WIB</p>
                         <?=$id?>
                         <div class="col-lg-12 d-flex justify-content-center">
                             <dotlottie-player
@@ -112,7 +112,7 @@
                 <div class="col-lg-6 col-xl-6">
                     <div class="card sukses-bayar text-center">
                         <h4 class="text-center pt-3">Pendaftaran Berhasil!</h4>
-                        <p><?=$tempdata['created_at']?> WIB</p>
+                        <p><?= date('d M Y, H:i:s',strtotime($tempdata['created_at']))?> WIB</p>
                         <?=$id?>
                         <div class="col-lg-12 d-flex justify-content-center">
                             <dotlottie-player
@@ -138,7 +138,7 @@
                 <div class="col-lg-6 col-xl-6">
                     <div class="card sukses-bayar text-center">
                         <h4 class="text-center pt-3">Pendaftaran Berhasil!</h4>
-                        <p><?=$tempdata['created_at']?> WIB</p>
+                        <p><?= date('d M Y, H:i:s',strtotime($tempdata['created_at']))?> WIB</p>
                         <?=$id?>
                         <div class="col-lg-12 d-flex justify-content-center">
                             <dotlottie-player
@@ -164,7 +164,7 @@
                 <div class="col-lg-6 col-xl-6">
                     <div class="card sukses-bayar text-center">
                         <h4 class="text-center pt-3">Pendaftaran Berhasil!</h4>
-                        <p><?=$tempdata['created_at']?> WIB</p>
+                        <p><?= date('d M Y, H:i:s',strtotime($tempdata['created_at']))?> WIB</p>
                         <?=$id?>
                         <div class="col-lg-12 d-flex justify-content-center">
                             <dotlottie-player
