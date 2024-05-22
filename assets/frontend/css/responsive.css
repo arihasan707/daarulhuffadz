@@ -95,6 +95,12 @@
 	}
 }
 
+@media screen and (min-width:769px) {
+	.hero h2, .tp-slider-btn, .tp-slider-subtitle {
+		display: none;
+	}
+}
+
 @media only screen and (min-width:220px) and (max-width:768px) {
 	.pndaftar a {
 		left: 35px;
@@ -116,6 +122,14 @@
 		font-size: 35px;
 	}
 }
+
+@media only screen and (min-width:320px) and (max-width:1024px) {
+	.disc span {
+		margin-bottom: 32px;
+	}
+}
+
+
 
 	
 
