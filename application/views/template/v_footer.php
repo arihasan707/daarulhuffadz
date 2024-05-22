@@ -72,8 +72,8 @@
                                     </div>
                                     <div class="col-11">
                                         <div class="wa">
-                                            <a href="">
-                                                daarulhuffadz@gmail.com
+                                            <a href="mailto:admin_dhi@daarulhuffadz.com" target="blank">
+                                                admin_dhi@daarulhuffadz.com
                                             </a>
                                         </div>
                                     </div>
