@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?= $title ?></title>
-    <meta name="description" content="">
+    <meta name="description" content="Pondok pesantren tahfidz favorit dengan biaya murah dan program yang lengkap">
+    <meta name="author" content="Pesantren Tahfidz Daarul Huffadz Indonesia">
+    <meta name="keywords"
+        content="Pondok pesantren favorit, Pesantren tahfidz dibogor, Mutqin 30 juz, Pondok tahfidz, Metode tawazun, Kuliah double gelar, Pondok tahfidz murah, ">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
