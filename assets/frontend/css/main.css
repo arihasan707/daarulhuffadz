@@ -2808,12 +2808,12 @@ marquee span{
 
 .tp-slider h2 {
 	margin-top: -15px;
+	font-weight: 900;
 	font-size: 40px;
 }
 
 .tp-slider-title {
 	font-size: 83px;
-	line-height: 1;
 	margin-top: -18px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
