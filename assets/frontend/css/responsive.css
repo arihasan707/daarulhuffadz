@@ -95,7 +95,7 @@
 	}
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:769px) and (max-width:992px) {
 	.hero h2, .tp-slider-btn, .tp-slider-subtitle {
 		display: none;
 	}
