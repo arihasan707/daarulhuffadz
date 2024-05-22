@@ -146,13 +146,18 @@
             <?php foreach($prog as $row) {?>
             <div class="col-xl-2 col-sm-6">
                 <div class="tp-feature-three text-center mb-30 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="tp-cta-two mb-30 wow fadeInUp" data-wow-delay=".2s">
+                    <?php if($row->diskon == '1') {?>
+                    <div class="col disc">
+                        <span>PROMO</span>
+                    </div>
+                    <?php };?>
+                    <div class="tp-cta-two mb-10 wow fadeInUp" data-wow-delay=".2s">
                         <div class="tp-feature-three-text">
                             <h4 class="tp-feature-three-title"><?=$row->nama_prog?></h4>
-                            <div class="btn1">
-                                <a href="<?=base_url('pmb_online/pendaftaran/' . $row->slug)?>">Daftar</a>
-                            </div>
                         </div>
+                    </div>
+                    <div class="btn1 mb-3">
+                        <a href="<?=base_url('pmb_online/pendaftaran/' . $row->slug)?>">Daftar</a>
                     </div>
                 </div>
             </div>
