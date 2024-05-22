@@ -1808,9 +1808,9 @@ select {
 	width: 103px;
 	height: 33px;
 	line-height: 30px;
-	font-weight: 600;
+	font-weight: 800;
 	display: inline-block;
-	color: white;
+	color: #22538f;
 }
 
 .theme-btn2 {
@@ -9120,6 +9120,12 @@ td {
 	border-radius: 10px;
 	display: flex;
 	justify-content: center;
+}
+
+.disc {
+	display: flex;
+	justify-content: center;
+	align-items: end;
 }
 
 
