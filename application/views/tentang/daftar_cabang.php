@@ -16,7 +16,7 @@
                     <div class=" wow fadeInUp" data-wow-delay=".4s">
                         <h4 class="tp-choose-timeline-single-title mb-15 hover-theme-color"><?= $row->nm_cbng?></h4>
                         <p><?= $row->alamat?></p>
-                        <?php if($row != NULL) { { ?>
+                        <?php if($row->map_google != NULL) { { ?>
                         <div class="maps btn btn-costum">
                             <a href="<?= $row->map_google?>">Lokasi Maps</a>
                         </div>
