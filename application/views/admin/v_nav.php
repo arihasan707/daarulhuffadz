@@ -33,7 +33,7 @@
             </ul>
             <ul id="data_pondok" class="nav-content collapse" data-bs-parent="#sidebar-nav">
                 <li>
-                    <a class="" href="<?= base_url('administrator/pengurus') ?>">
+                    <a class="" href="<?= base_url('administrator/cabang') ?>">
                         <i class="bi bi-circle"></i><span>Daftar Cabang</span>
                     </a>
                 </li>

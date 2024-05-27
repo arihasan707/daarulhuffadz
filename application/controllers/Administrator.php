@@ -316,7 +316,7 @@ class Administrator extends CI_Controller
 		];
 		$data['cabang'] = $this->app->get_all('tbl_cabang');
 		$this->load->view('admin/v_header', $title);
-		$this->load->view('admin/cabang/v_nav');
+		$this->load->view('admin/v_nav');
 		$this->load->view('admin/cabang/v_cabang', $data);
 		$this->load->view('admin/v_footer');
 	}
@@ -324,17 +324,23 @@ class Administrator extends CI_Controller
 	public function tambah_cabang()
 	{
 		$nm_cbng = $this->input->post('nama');
-		$alamat = $this->inpot->post('alamat');
+		$alamat = $this->input->post('alamat');
 		$google_maps = $this->input->post('maps');
-
 		$data = [
-			'nm_cabang' => $nm_cbng,
+			'nm_cbng' => $nm_cbng,
 			'alamat' => $alamat,
 			'map_google' => $google_maps
 		];
 		$this->app->insert('tbl_cabang', $data);
 		$this->session->set_flashdata('success',  'Di Tambah');
 		redirect('administrator/cabang');
+	}
+	
+	public function hapus_cabang($id){
+		$this->app->delete('tbl_cabang', ['id'=> $id]);
+		$this->session->set_flashdata('success',  'Di Hapus');
+		redirect('administrator/cabang');
+		
 	}
 	
 	public function album_foto(){
