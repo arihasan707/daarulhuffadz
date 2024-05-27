@@ -108,8 +108,6 @@
                                             <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map"> Pondok
                                                 Ikhwan</a>
                                             <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
-                                                Menteng</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
                                                 Citayam</a>
                                             <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
                                                 Citeureup</a>
@@ -145,7 +143,7 @@
                     <div class="tp-copyright text-center">
                         <p>© <script>
                             document.write(new Date().getFullYear())
-                            </script> Daarul Huffadz Indonesia . All rights reserved. </p>
+                            </script> Daarul Huffadz Indonesia</p>
                     </div>
                 </div>
             </div>

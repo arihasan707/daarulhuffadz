@@ -53,12 +53,6 @@
                                         <a href="https://goo.gl/maps/dgMyfGPNwMrADKVD8">Lokasi Maps</a>
                                     </div>
                                 </div>
-                                <div class="tp-choose-timeline-single mb-55 pl-35 wow fadeInUp" data-wow-delay="1.2s">
-                                    <h4 class="tp-choose-timeline-single-title mb-15 hover-theme-color"><a
-                                            href="service-details.html">Cabang Menteng</a></h4>
-                                    <p>Jl. Dr. Semeru, Gg. Kelor Raya No. 5A RT.03 RW.10, Kelurahan Menteng, Kec. Bogor
-                                        Barat, Kota Bogor </p>
-                                </div>
                                 <div class="tp-choose-timeline-single pl-35 wow fadeInUp" data-wow-delay="1.4s">
                                     <h4 class="tp-choose-timeline-single-title mb-15 hover-theme-color"><a
                                             href="service-details.html">Cabang Dramaga <br> (Khusus Boarding &
