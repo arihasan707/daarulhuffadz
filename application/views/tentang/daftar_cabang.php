@@ -11,7 +11,7 @@
     <section class="tp-choose-area position-relative pt-30 pb-30">
         <div class="container">
             <div class="row">
-                <?php foreach($cbng as $row) ?>
+                <?php foreach($cbng as $row) { ?>
                 <div class="col-lg-3 mb-4">
                     <div class=" wow fadeInUp" data-wow-delay=".4s">
                         <h4 class="tp-choose-timeline-single-title mb-15 hover-theme-color"><?= $row->nm_cbng?></h4>
@@ -23,6 +23,7 @@
                         <?php }} ?>
                     </div>
                 </div>
+                <?php }; ?>
             </div>
         </div>
     </section>
