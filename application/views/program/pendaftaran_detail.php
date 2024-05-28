@@ -322,9 +322,9 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
                                     <div class="mb-3 gratis">
-                                        <h5><span class="badge rounded-pill bg-danger">PROMO</span> Gratis Biaya
-                                            Pendaftaran
-                                            <s>Rp.300.000-,</s>
+                                        <h5><span class="badge rounded-pill bg-danger">PROMO Gratis Biaya
+                                                Pendaftaran
+                                                Rp.<del>300.000-,</del></span>
                                         </h5>
                                         <input class="form-control" name="bayar" value="promo" type="hidden">
                                     </div>
@@ -711,9 +711,9 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
                                     <div class="mb-3 gratis">
-                                        <h5><span class="badge rounded-pill bg-danger">PROMO</span> Gratis Biaya
-                                            Pendaftaran
-                                            <s>Rp.300.000-,</s>
+                                        <h5><span class="badge rounded-pill bg-danger">PROMO Gratis Biaya
+                                                Pendaftaran
+                                                Rp.<del>300.000-,</del></span>
                                         </h5>
                                         <input class="form-control" name="bayar" value="promo" type="hidden">
                                     </div>
@@ -1319,9 +1319,9 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
                                     <div class="mb-3 gratis">
-                                        <h5><span class="badge rounded-pill bg-danger">PROMO</span> Gratis Biaya
-                                            Pendaftaran
-                                            <s>Rp.300.000-,</s>
+                                        <h5><span class="badge rounded-pill bg-danger">PROMO Gratis Biaya
+                                                Pendaftaran
+                                                Rp.<del>300.000-,</del></span>
                                         </h5>
                                         <input class="form-control" name="bayar" value="promo" type="hidden">
                                     </div>
@@ -1614,9 +1614,9 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
                                     <div class="mb-3 gratis">
-                                        <h5><span class="badge rounded-pill bg-danger">PROMO</span> Gratis Biaya
-                                            Pendaftaran
-                                            <s>Rp.300.000-,</s>
+                                        <h5><span class="badge rounded-pill bg-danger">PROMO Gratis Biaya
+                                                Pendaftaran
+                                                Rp.<del>300.000-,</del></span>
                                         </h5>
                                         <input class="form-control" name="bayar" value="promo" type="hidden">
                                     </div>
@@ -2031,9 +2031,9 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
                                     <div class="mb-3 gratis">
-                                        <h5><span class="badge rounded-pill bg-danger">PROMO</span> Gratis Biaya
-                                            Pendaftaran
-                                            <s>Rp.300.000-,</s>
+                                        <h5><span class="badge rounded-pill bg-danger">PROMO Gratis Biaya
+                                                Pendaftaran
+                                                Rp.<del>300.000-,</del></span>
                                         </h5>
                                         <input class="form-control" name="bayar" value="promo" type="hidden">
                                     </div>
@@ -2685,9 +2685,9 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
                                     <div class="mb-3 gratis">
-                                        <h5><span class="badge rounded-pill bg-danger">PROMO</span> Gratis Biaya
-                                            Pendaftaran
-                                            <s>Rp.300.000-,</s>
+                                        <h5><span class="badge rounded-pill bg-danger">PROMO Gratis Biaya
+                                                Pendaftaran
+                                                Rp.<del>300.000-,</del></span>
                                         </h5>
                                         <input class="form-control" name="bayar" value="promo" type="hidden">
                                     </div>
