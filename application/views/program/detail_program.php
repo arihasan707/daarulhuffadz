@@ -48,8 +48,10 @@
                                 </div>
                             </div>
                         </div>
-                        <h2 class="tp-section-title pt-10 mb-20"><?= $slug['nama_prog']?></h2>
-                        <p><?=$slug['ket']?></p>
+                        <div class="card">
+                            <h2 class="tp-section-title pt-10 mb-20"><?= $slug['nama_prog']?></h2>
+                            <p><?=$slug['ket']?></p>
+                        </div>
                         <?php
                         switch($slug['slug']){
                         case 'Karantina-Quran-1-Tahun':
@@ -125,14 +127,16 @@
                 </div>
                 <div class="col-xl-3 col-lg-4">
                     <div class="tp-faqs-left">
-                        <div class="tp-faqs-left-sidebar tp-services-sidebar mb-30">
-                            <h4 class="tp-faqs-left-sidebar-title">Lihat Detail Program Lainnya</h4>
-                            <ul>
-                                <?php foreach($prog_all as $p) { ?>
-                                <li><a href="<?=base_url('pmb_online/detail_program/'.$p->slug)?>"><?=$p->nama_prog?> <i
-                                            class="fas fa-arrow-circle-right"></i></a></li>
-                                <?php }?>
-                            </ul>
+                        <div class="card">
+                            <div class="tp-faqs-left-sidebar tp-services-sidebar mb-30">
+                                <h4 class="tp-faqs-left-sidebar-title">Lihat Detail Program Lainnya</h4>
+                                <ul>
+                                    <?php foreach($prog_all as $p) { ?>
+                                    <li><a href="<?=base_url('pmb_online/detail_program/'.$p->slug)?>"><?=$p->nama_prog?>
+                                            <i class="fas fa-arrow-circle-right"></i></a></li>
+                                    <?php }?>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
