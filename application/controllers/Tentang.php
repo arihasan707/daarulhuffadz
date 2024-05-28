@@ -26,9 +26,10 @@ class Tentang extends CI_Controller
             "title" => "Pesantren Tahfidz Daarul Huffadz Indonesia - Mencetak Generasi Penghafal Al-Qur'an"
         ];
         $cabang['cbng'] = $this->app->all('tbl_cabang')->result();
+        $maps_footer['maps'] = $this->app->all('tbl_cabang')->result();
         $this->load->view('template/v_header', $data);
         $this->load->view('v_nav');
         $this->load->view('tentang/daftar_cabang',$cabang);
-        $this->load->view('template/v_footer');
+        $this->load->view('template/v_footer',$maps_footer);
     }
 }

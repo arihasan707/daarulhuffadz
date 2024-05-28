@@ -103,28 +103,10 @@
                                     </div>
                                     <div class="col-11 mt-1">
                                         <div class="wa">
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map"> Pondok
-                                                Syahir Dramaga</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map"> Pondok
-                                                Ikhwan</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
-                                                Citayam</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
-                                                Citeureup</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
-                                                Jember</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
-                                                Bukittinggi</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map"> Jambi</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map"> Medan</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
-                                                Pekanbaru</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
-                                                Balikpapan</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map">
-                                                Pontianak</a>
-                                            <a href="<?=base_url('tentang/daftar_cabang/')?>" class="btn-map"> Jakarta
-                                                Pusat</a>
+                                            <?php foreach($maps as $row) { ?>
+                                            <a <?= ($row->map_google != Null ) ? "href=" .$row->map_google : "href=#"  ?>
+                                                class="btn-map"><?=$row->nm_cbng?></a>
+                                            <?php } ?>
                                         </div>
                                     </div>
                                 </div>

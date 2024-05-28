@@ -15,11 +15,11 @@ class Pmb_online extends CI_Controller
     {
         $title["title"] = "Pesantren Tahfidz Daarul Huffadz Indonesia - Mencetak Generasi Penghafal Al-Qur'an";
         $data["prog"] = $this->app->all('tbl_program');
-
+        $maps_footer['maps'] = $this->app->all('tbl_cabang')->result();
         $this->load->view('template/v_header', $title);
         $this->load->view('v_nav');
         $this->load->view('program/program_unggulan', $data);
-        $this->load->view('template/v_footer');
+        $this->load->view('template/v_footer',$maps_footer);
     }
 
     public function pendaftaran($slug)
@@ -33,11 +33,11 @@ class Pmb_online extends CI_Controller
             
             // 'pendaftaran' => $this->app->get_daftar()->result()
         ];
-        
+        $maps_footer['maps'] = $this->app->all('tbl_cabang')->result();
         $this->load->view('template/v_header', $title);
         $this->load->view('v_nav',$data);
         $this->load->view('program/pendaftaran_detail', $data);
-        $this->load->view('template/v_footer');
+        $this->load->view('template/v_footer',$maps_footer);
     }
     
     public function detail_program($slug){
@@ -46,10 +46,11 @@ class Pmb_online extends CI_Controller
             'slug' => $this->app->get_where('tbl_program', ['slug' => $slug])->row_array(),
             'prog_all' => $this->app->all('tbl_program')->result()
         ];
+        $maps_footer['maps'] = $this->app->all('tbl_cabang')->result();
         $this->load->view('template/v_header', $title);
         $this->load->view('v_nav',$data);
         $this->load->view('program/detail_program', $data);
-        $this->load->view('template/v_footer');
+        $this->load->view('template/v_footer',$maps_footer);
     }
 
     public function get_kabupaten()
@@ -661,9 +662,10 @@ class Pmb_online extends CI_Controller
         $tempdata = $this->session->tempdata('temp');
         if (!empty($tempdata)) {
             $tempdata['tempdata'] = $this->session->tempdata('temp');
+            $maps_footer['maps'] = $this->app->all('tbl_cabang')->result();
             $this->load->view('template/v_header',$title);
             $this->load->view('program/v_sukses',$tempdata);
-            $this->load->view('template/v_footer');
+            $this->load->view('template/v_footer',$maps_footer);
         }else{
            redirect();
         }
