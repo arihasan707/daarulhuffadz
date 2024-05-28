@@ -104,7 +104,8 @@
                                     <div class="col-11 mt-1">
                                         <div class="wa">
                                             <?php foreach($maps as $row) { ?>
-                                            <a <?= ($row->map_google != Null ) ? "href=" .$row->map_google."blank='target'" : "href=#"  ?>
+                                            <a target="blank"
+                                                <?= ($row->map_google != Null ) ? "href=" .$row->map_google: "href=#"  ?>
                                                 class="btn-map"><?=$row->nm_cbng?></a>
                                             <?php } ?>
                                         </div>
