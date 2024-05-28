@@ -8,7 +8,7 @@
     </section>
     <!-- Choose area start here -->
 
-    <section class="tp-choose-area position-relative pt-120">
+    <section class="tp-choose-area position-relative pt-30">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-xl-6 col-md-6">
