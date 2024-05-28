@@ -17,29 +17,35 @@
                             <div class="tp-choose-timeline ml-15 mb-30">
                                 <div class="tp-choose-timeline-single mb-55 pl-35 wow fadeInUp" data-wow-delay=".4s">
                                     <h4 class="tp-choose-timeline-single-title mb-15 hover-theme-color"><a
-                                            href="https://goo.gl/maps/ZYARECmPDmT9e4ALA">Cabang Cangkrang (Khusus
+                                            href="https://goo.gl/maps/ZYARECmPDmT9e4ALA" targer="blank">Cabang Cangkrang
+                                            (Khusus
                                             Ikhwan)</a></h4>
                                     <p>Jl. Carangpulang. Gg. Masjid Alhuda I, Kp. Cangkrang RT.02 RW.02, Desa
                                         Cikarawang, Kec. Dramaga, Kab. Bogor, Jawa Barat</p>
                                     <div class="maps btn btn-costum">
-                                        <a href="https://goo.gl/maps/ZYARECmPDmT9e4ALA">Lihat Lokasi Maps</a>
+                                        <a href="https://goo.gl/maps/ZYARECmPDmT9e4ALA" targer="blank">Lihat Lokasi
+                                            Maps</a>
                                     </div>
                                 </div>
                                 <div class="tp-choose-timeline-single mb-55 pl-35 wow fadeInUp" data-wow-delay=".6s">
                                     <h4 class="tp-choose-timeline-single-title mb-15 hover-theme-color"><a
-                                            href="https://goo.gl/maps/BnNAdPMRgqHfR5y98">Cabang Citeureup</a></h4>
+                                            href="https://goo.gl/maps/BnNAdPMRgqHfR5y98" targer="blank">Cabang
+                                            Citeureup</a></h4>
                                     <p>Jl. Pahlawan RT.06 RW.04, Desa Senja, Kec. Citeureup, Kab. Bogor, Jawa Barat</p>
                                     <div class="maps btn btn-costum">
-                                        <a href="https://goo.gl/maps/BnNAdPMRgqHfR5y98">Lihat Lokasi Maps</a>
+                                        <a href="https://goo.gl/maps/BnNAdPMRgqHfR5y98" targer="blank">Lihat Lokasi
+                                            Maps</a>
                                     </div>
                                 </div>
                                 <div class="tp-choose-timeline-single pl-35 wow fadeInUp" data-wow-delay=".8s">
                                     <h4 class="tp-choose-timeline-single-title mb-15 hover-theme-color"><a
-                                            href="https://goo.gl/maps/HBGckrtdiRL1pJXK7">Cabang Citayam</a></h4>
+                                            href="https://goo.gl/maps/HBGckrtdiRL1pJXK7" targer="blank">Cabang
+                                            Citayam</a></h4>
                                     <p>Villa Pabuaran Indah, Jl. Pradana Raya II, Desa Pabuaran, Kec. Bojong Gede, Kab.
                                         Bogor</p>
                                     <div class="maps btn btn-costum">
-                                        <a href="https://goo.gl/maps/HBGckrtdiRL1pJXK7">Lihat Lokasi Maps</a>
+                                        <a href="https://goo.gl/maps/HBGckrtdiRL1pJXK7" targer="blank">Lihat Lokasi
+                                            Maps</a>
                                     </div>
                                 </div>
                             </div>
@@ -48,13 +54,15 @@
                             <div class="tp-choose-timeline ml-15 mb-30">
                                 <div class="tp-choose-timeline-single mb-55 pl-35 wow fadeInUp" data-wow-delay="1s">
                                     <h4 class="tp-choose-timeline-single-title mb-15 hover-theme-color"><a
-                                            href="https://goo.gl/maps/FCWjmfzuZHbVNRDYA">Cabang Dramaga (Khusus Boarding
+                                            href="https://goo.gl/maps/FCWjmfzuZHbVNRDYA" targer="blank">Cabang Dramaga
+                                            (Khusus Boarding
                                             & Institute)</a>
                                     </h4>
                                     <p>Jl. Batu Hulung No.54, RT.02 RW.01, Kelurahan Margajaya, Kec. Bogor Barat, Kota
                                         Bogor</p>
                                     <div class="maps btn btn-costum">
-                                        <a href="https://goo.gl/maps/FCWjmfzuZHbVNRDYA">Lihat Lokasi Maps</a>
+                                        <a href="https://goo.gl/maps/FCWjmfzuZHbVNRDYA" targer="blank">Lihat Lokasi
+                                            Maps</a>
                                     </div>
                                 </div>
                                 <div class="tp-choose-timeline-single mb-55 pl-35 wow fadeInUp" data-wow-delay="1.2s">
