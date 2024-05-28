@@ -11,7 +11,7 @@
     <section class="tp-choose-area position-relative pt-40 pb-40">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-xl-6 col-md-6">
+                <div class="col-xl-6 col-md-12">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="tp-choose-timeline ml-15 mb-30">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-6">
+                <div class="col-xl-6 col-md-12">
                     <div class="tp-choose z-index">
                         <div class="row">
                             <div class="col-sm-6">
