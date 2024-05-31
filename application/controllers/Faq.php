@@ -3,6 +3,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class faq extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('app');
+    }
 
     public function index()
     {
@@ -15,6 +20,6 @@ class faq extends CI_Controller
         $this->load->view('template/v_header', $title);
         $this->load->view('v_nav');
         $this->load->view('faq/v_faq');
-        $this->load->view('template/v_footer',$maps_footer);
+        $this->load->view('template/v_footer', $maps_footer);
     }
 }
