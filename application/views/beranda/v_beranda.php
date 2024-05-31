@@ -259,7 +259,7 @@
                         <!-- <div class="section-title-wrapper">
                             <h2 class="tp-section-title mb-25">Visi & Misi </h2>
                         </div> -->
-                        <p>Daarul Huffadz Indonseia merupakan salah satu pesantren tahfidz yang memiliki peran dalam
+                        <p>Daarul Huffadz Indonesia merupakan salah satu pesantren tahfidz yang memiliki peran dalam
                             membangun peradaban melalui bidang pendidikan agama islam khususnya dalam hafalan Al-Qur'an.
                             Berdiri sejak tahun 2018 sebelum menjadi pondok tahfidz Daarul Huffadz Indonesia sudah
                             berdiri sejak 2013 dan pada awalnya hanyalah rumah-rumah Qur'an
