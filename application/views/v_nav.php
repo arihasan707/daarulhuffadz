@@ -29,7 +29,7 @@
                                 <!-- <li><a href="<?= base_url('galeri/') ?>" class="b">Galeri</a></li> -->
                                 <li><a href="<?= base_url('biaya/') ?>" class="b">Biaya</a></li>
                                 <li><a href="<?= base_url('kontak/') ?>" class="k">Kontak</a></li>
-                                <li><a href="<?= base_url('faq/') ?>" class="f">FAQs</a></li>
+                                <li><a href="<?= base_url('faqs/') ?>" class="f">FAQs</a></li>
                             </ul>
                         </nav>
                     </div>
