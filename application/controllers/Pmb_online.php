@@ -151,7 +151,6 @@ class Pmb_online extends CI_Controller
             'notif' => '0'
         ];
         $this->app->insert('tbl_pmb_po', $data['temp']);
-
         $this->session->set_tempdata($data, NULL, 300);
         redirect('pmb_online/pendaftaran_sukses/');
     }
