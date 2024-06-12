@@ -1,5 +1,5 @@
 <?php
-$date = date_create($tempdata['created_at']);
+$date = date_create($tempdata['created_at'] + 0023);
 ?>
 
 <div class="flash-data" data-flashdata="<?= $this->session->flashdata('sukses') ?>"></div>
