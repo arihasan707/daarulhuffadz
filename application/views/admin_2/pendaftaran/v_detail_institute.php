@@ -35,36 +35,74 @@
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label ">Program yang dipilih</div>
                                     <div class="col-lg-9 col-md-8">
-                                        <?= $d->prog == '3' ? 'DH Institute S1 Double Gelar' : '' ;  ?></div>
+                                        <?= $d->prog ?></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-4 label ">Jalur Masuk</div>
+                                    <div class="col-lg-9 col-md-8">
+                                        <?php
+                                            switch ($d->jalur) {
+                                                case "1":
+                                                    echo "Reguler";
+                                                    break;
+                                                case "2":
+                                                    echo "Reguler (Alumni DHI)";
+                                                    break;
+                                                case "3":
+                                                    echo "Beasiswa Subsidi";
+                                                    break;
+                                                case "":
+                                                    echo "-";
+                                                    break;
+                                                default:
+                                                    echo "Beasiswa Full (Alumni)";
+                                                    break;
+                                            }
+                                            ?></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label ">Sistem Perkuliahan</div>
                                     <div class="col-lg-9 col-md-8"><?php
-                                    switch ($d->sistem){
-                                        case "1":
-                                        echo "Online - Tatap Muka";
-                                        break; 
-                                        case "2":
-                                        echo "Offline - Jarak Jauh";
-                                        break; 
-                                    }
-                                     ?></div>
+                                                                        switch ($d->sistem) {
+                                                                            case "1":
+                                                                                echo "Double Degree - Online";
+                                                                                break;
+                                                                            case "2":
+                                                                                echo "Double Degree - Offline";
+                                                                                break;
+                                                                            default:
+                                                                                echo "PAI Plus - Online";
+                                                                                break;
+                                                                        }
+                                                                        ?></div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-3 col-md-4 label ">Program Studi</div>
+                                    <div class="col-lg-3 col-md-4 label ">Jurusan</div>
                                     <div class="col-lg-9 col-md-8"><?php
-                                    switch ($d->prodi){
-                                        case "1":
-                                        echo "PAI - Pendidikan Agama Islam";
-                                        break; 
-                                        case "2":
-                                        echo "PAI & IAT (Double Gelar)";
-                                        break; 
-                                        default:
-                                        echo "PAI & IAT (Double Gelar)";
-                                        break;
-                                    }
-                                     ?></div>
+                                                                        switch ($d->prodi) {
+                                                                            case "1":
+                                                                                echo "Pendidikan Agama Islam";
+                                                                                break;
+                                                                            case "2":
+                                                                                echo "Ilmu Al-Qur'an dan Tafsir";
+                                                                                break;
+                                                                            case "3":
+                                                                                echo "Pendidikan Bahasa Arab";
+                                                                                break;
+                                                                            case "4":
+                                                                                echo "Komunikasi dan Penyiaran Islam";
+                                                                                break;
+                                                                            case "5":
+                                                                                echo "Syariah (Akhwal Sakhsiyah)";
+                                                                                break;
+                                                                            case "6":
+                                                                                echo "Ekonomi Syariah";
+                                                                                break;
+                                                                            default:
+                                                                                echo "PAI Plus - Pendidikan Agama Islam";
+                                                                                break;
+                                                                        }
+                                                                        ?></div>
                                 </div>
                                 <h5 class="card-title">Data Identitas Utama</h5>
                                 <div class="row">
@@ -86,28 +124,28 @@
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Jenis Kelamin</div>
                                     <div class="col-lg-9 col-md-8"><?php
-                                    switch($d->jkl){
-                                        case '1':
-                                        echo 'Laki-laki';
-                                        break;
-                                        default:
-                                        echo 'Perempuan';
-                                        break;
-                                    }
-                                    ?></div>
+                                                                        switch ($d->jkl) {
+                                                                            case '1':
+                                                                                echo 'Laki-laki';
+                                                                                break;
+                                                                            default:
+                                                                                echo 'Perempuan';
+                                                                                break;
+                                                                        }
+                                                                        ?></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Kewarganegaraan</div>
                                     <div class="col-lg-9 col-md-8"><?php
-                                    switch($d->warga){
-                                        case '1':
-                                        echo 'WNI';
-                                        break;
-                                        default:
-                                        echo 'WNA';
-                                        break;
-                                    }
-                                    ?></div>
+                                                                        switch ($d->warga) {
+                                                                            case '1':
+                                                                                echo 'WNI';
+                                                                                break;
+                                                                            default:
+                                                                                echo 'WNA';
+                                                                                break;
+                                                                        }
+                                                                        ?></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Email</div>
@@ -125,24 +163,24 @@
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Pekerjaan</div>
                                     <div class="col-lg-9 col-md-8"><?php
-                                    switch($d->kerja){
-                                        case "1":
-                                        echo "Belum Bekerja";
-                                        break;
-                                        case "2":
-                                        echo "Peg. Swasta";
-                                        break;
-                                        case "3":
-                                        echo "Wiraswasta";
-                                        break;
-                                        case "4":
-                                        echo "PNS";
-                                        break;
-                                        default:
-                                        echo $d->kerja;
-                                        break;
-                                    }
-                                    ?></div>
+                                                                        switch ($d->kerja) {
+                                                                            case "1":
+                                                                                echo "Belum Bekerja";
+                                                                                break;
+                                                                            case "2":
+                                                                                echo "Peg. Swasta";
+                                                                                break;
+                                                                            case "3":
+                                                                                echo "Wiraswasta";
+                                                                                break;
+                                                                            case "4":
+                                                                                echo "PNS";
+                                                                                break;
+                                                                            default:
+                                                                                echo $d->kerja;
+                                                                                break;
+                                                                        }
+                                                                        ?></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Bakat/Keahlian</div>
@@ -184,45 +222,45 @@
                                 <h5 class="card-title">Data Pendidikan Akademik</h5>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Pendidikan Terakhir</div>
-                                    <div class="col-lg-9 col-md-8"><?php 
-                                    switch($d->pendidikan){
-                                        case '1':
-                                        echo "SMA";
-                                        break;    
-                                        case '2':
-                                        echo "SMK";
-                                        break;    
-                                        case '3':
-                                        echo "MA";
-                                        break;    
-                                        case '4':
-                                        echo "Diploma";
-                                        break;    
-                                        case '5':
-                                        echo "Sarjana";
-                                        break;    
-                                        default:
-                                        echo $d->pendidikan;
-                                        break;
-                                    } ?></div>
+                                    <div class="col-lg-9 col-md-8"><?php
+                                                                        switch ($d->pendidikan) {
+                                                                            case '1':
+                                                                                echo "SMA";
+                                                                                break;
+                                                                            case '2':
+                                                                                echo "SMK";
+                                                                                break;
+                                                                            case '3':
+                                                                                echo "MA";
+                                                                                break;
+                                                                            case '4':
+                                                                                echo "Diploma";
+                                                                                break;
+                                                                            case '5':
+                                                                                echo "Sarjana";
+                                                                                break;
+                                                                            default:
+                                                                                echo $d->pendidikan;
+                                                                                break;
+                                                                        } ?></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Jurusan</div>
-                                    <div class="col-lg-9 col-md-8"><?php 
-                                    switch($d->jurusan){
-                                        case '1':
-                                        echo "IPA";
-                                        break;
-                                        case '2':
-                                        echo "IPS";
-                                        break;
-                                        case '3':
-                                        echo "Bahasa";
-                                        break;
-                                        default:
-                                        echo $d->jurusan;
-                                        break;
-                                    } ?></div>
+                                    <div class="col-lg-9 col-md-8"><?php
+                                                                        switch ($d->jurusan) {
+                                                                            case '1':
+                                                                                echo "IPA";
+                                                                                break;
+                                                                            case '2':
+                                                                                echo "IPS";
+                                                                                break;
+                                                                            case '3':
+                                                                                echo "Bahasa";
+                                                                                break;
+                                                                            default:
+                                                                                echo $d->jurusan;
+                                                                                break;
+                                                                        } ?></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Asal Sekolah</div>
@@ -256,27 +294,27 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Penghasilan</div>
-                                    <div class="col-lg-9 col-md-8"><?php 
-                                    switch($d->hasil_ayah){
-                                        case '1':
-                                        echo "< 2 Juta /bulan";
-                                        break;
-                                        case '2':
-                                        echo "2-3 Juta /bulan";
-                                        break;
-                                        case '3':
-                                        echo "3-4 Juta /bulan";
-                                        break;
-                                        case '4':
-                                        echo "5-10 Juta /bulan";
-                                        break;
-                                        case '5':
-                                        echo " > 10 Juta /bulan";
-                                        break;
-                                        default:
-                                        echo $d->hasil_ayah;
-                                        break;
-                                    } ?></div>
+                                    <div class="col-lg-9 col-md-8"><?php
+                                                                        switch ($d->hasil_ayah) {
+                                                                            case '1':
+                                                                                echo "< 2 Juta /bulan";
+                                                                                break;
+                                                                            case '2':
+                                                                                echo "2-3 Juta /bulan";
+                                                                                break;
+                                                                            case '3':
+                                                                                echo "3-4 Juta /bulan";
+                                                                                break;
+                                                                            case '4':
+                                                                                echo "5-10 Juta /bulan";
+                                                                                break;
+                                                                            case '5':
+                                                                                echo " > 10 Juta /bulan";
+                                                                                break;
+                                                                            default:
+                                                                                echo $d->hasil_ayah;
+                                                                                break;
+                                                                        } ?></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">No. Wa Ayah</div>
@@ -297,27 +335,27 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Penghasilan</div>
-                                    <div class="col-lg-9 col-md-8"><?php 
-                                    switch($d->hasil_ibu){
-                                        case '1':
-                                        echo "< 2 Juta /bulan";
-                                        break;
-                                        case '2':
-                                        echo "2-3 Juta /bulan";
-                                        break;
-                                        case '3':
-                                        echo "3-4 Juta /bulan";
-                                        break;
-                                        case '4':
-                                        echo "5-10 Juta /bulan";
-                                        break;
-                                        case '5':
-                                        echo " > 10 Juta /bulan";
-                                        break;
-                                        default:
-                                        echo $d->hasil_ibu;
-                                        break;
-                                    } ?></div>
+                                    <div class="col-lg-9 col-md-8"><?php
+                                                                        switch ($d->hasil_ibu) {
+                                                                            case '1':
+                                                                                echo "< 2 Juta /bulan";
+                                                                                break;
+                                                                            case '2':
+                                                                                echo "2-3 Juta /bulan";
+                                                                                break;
+                                                                            case '3':
+                                                                                echo "3-4 Juta /bulan";
+                                                                                break;
+                                                                            case '4':
+                                                                                echo "5-10 Juta /bulan";
+                                                                                break;
+                                                                            case '5':
+                                                                                echo " > 10 Juta /bulan";
+                                                                                break;
+                                                                            default:
+                                                                                echo $d->hasil_ibu;
+                                                                                break;
+                                                                        } ?></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">No. Wa Ibu</div>
@@ -338,27 +376,27 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Penghasilan</div>
-                                    <div class="col-lg-9 col-md-8"><?php 
-                                    switch($d->hasil_wali){
-                                        case '1':
-                                        echo "< 2 Juta /bulan";
-                                        break;
-                                        case '2':
-                                        echo "2-3 Juta /bulan";
-                                        break;
-                                        case '3':
-                                        echo "3-4 Juta /bulan";
-                                        break;
-                                        case '4':
-                                        echo "5-10 Juta /bulan";
-                                        break;
-                                        case '5':
-                                        echo " > 10 Juta /bulan";
-                                        break;
-                                        default:
-                                        echo $d->hasil_wali;
-                                        break;
-                                    } ?></div>
+                                    <div class="col-lg-9 col-md-8"><?php
+                                                                        switch ($d->hasil_wali) {
+                                                                            case '1':
+                                                                                echo "< 2 Juta /bulan";
+                                                                                break;
+                                                                            case '2':
+                                                                                echo "2-3 Juta /bulan";
+                                                                                break;
+                                                                            case '3':
+                                                                                echo "3-4 Juta /bulan";
+                                                                                break;
+                                                                            case '4':
+                                                                                echo "5-10 Juta /bulan";
+                                                                                break;
+                                                                            case '5':
+                                                                                echo " > 10 Juta /bulan";
+                                                                                break;
+                                                                            default:
+                                                                                echo $d->hasil_wali;
+                                                                                break;
+                                                                        } ?></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">No. Wa Wali</div>
@@ -367,36 +405,36 @@
                                 <h5 class="card-title">Data Tambahan</h5>
                                 <div class="row">
                                     <div class="col-lg-3 col-md-4 label">Mengetahui DH Institute Dari</div>
-                                    <div class="col-lg-9 col-md-8"><?php 
-                                    switch($d->tau_drmana){
-                                        case '1':
-                                        echo "Sekolah";
-                                        break;
-                                        case '2':
-                                        echo "Teman";
-                                        break;
-                                        case '3':
-                                        echo "Orang Tua/Kerabat";
-                                        break;
-                                        case '4':
-                                        echo "Brosur/Poster";
-                                        break;
-                                        case '5':
-                                        echo "Sepanduk/Banner";
-                                        break;
-                                        case '6':
-                                        echo "Koran/Surat";
-                                        break;
-                                        case '7':
-                                        echo "Internet";
-                                        break;
-                                        case '8':
-                                        echo "Website";
-                                        break;
-                                        default:
-                                        echo $d->tau_drmana;
-                                        break;
-                                    } ?></div>
+                                    <div class="col-lg-9 col-md-8"><?php
+                                                                        switch ($d->tau_drmana) {
+                                                                            case '1':
+                                                                                echo "Sekolah";
+                                                                                break;
+                                                                            case '2':
+                                                                                echo "Teman";
+                                                                                break;
+                                                                            case '3':
+                                                                                echo "Orang Tua/Kerabat";
+                                                                                break;
+                                                                            case '4':
+                                                                                echo "Brosur/Poster";
+                                                                                break;
+                                                                            case '5':
+                                                                                echo "Sepanduk/Banner";
+                                                                                break;
+                                                                            case '6':
+                                                                                echo "Koran/Surat";
+                                                                                break;
+                                                                            case '7':
+                                                                                echo "Internet";
+                                                                                break;
+                                                                            case '8':
+                                                                                echo "Website";
+                                                                                break;
+                                                                            default:
+                                                                                echo $d->tau_drmana;
+                                                                                break;
+                                                                        } ?></div>
                                 </div>
                                 <h5 class="card-title">Data Dokumen Pendukung</h5>
                                 <div class="row">
@@ -428,14 +466,14 @@
                                         Juz</div>
                                     <div class="col-lg-9 col-md-8">
                                         <?php
-                                    switch($d->sertifikat){
-                                        case NULL:
-                                        echo "<div class='empty'>File Kosong</div>";
-                                        break;
-                                        default:
-                                        echo "<a href=" . base_url('admin_dua/download_sertifikat/') . $d->id_pmb . " class='btn btn-primary'>Klik Unduh</a>";
-                                        }
-                                        ?>
+                                            switch ($d->sertifikat) {
+                                                case NULL:
+                                                    echo "<div class='empty'>File Kosong</div>";
+                                                    break;
+                                                default:
+                                                    echo "<a href=" . base_url('admin_dua/download_sertifikat/') . $d->id_pmb . " class='btn btn-primary'>Klik Unduh</a>";
+                                            }
+                                            ?>
                                     </div>
                                 </div>
                             </div>

@@ -2123,23 +2123,44 @@
                                     </div>
                                     <div class="col-md-6 col-sm-12">
                                         <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label">Jalur Masuk
+                                                <span class="merah">*</span></label>
+                                            <select class="form-select" name="jalur"
+                                                aria-label="Default select example">
+                                                <option value="">-- Pilih Jalur Masuk --</option>
+                                                <option value="1">Reguler</option>
+                                                <option value="2">Reguler (Alumni)</option>
+                                                <option value="3">Beasiswa Subsidi</option>
+                                                <option value="4">Beasiswa Full (Alumni DHI)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label">Sistem Perkuliahan
                                                 <span class="merah">*</span></label>
                                             <select class="form-select" name="sistem"
                                                 aria-label="Default select example">
                                                 <option value="">-- Pilih Sistem Perkuliahan --</option>
-                                                <option value="1">Online</option>
-                                                <option value="2">Offline</option>
+                                                <option value="1">Double Degree - Online</option>
+                                                <option value="2">Double Degree - Offline</option>
+                                                <option value="3">PAI Plus - Online</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 col-sm-12">
+                                    <div class="col-md-6 col-sm-12">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Program Studi
+                                            <label for="exampleFormControlInput1" class="form-label">Jurusan
                                                 <span class="merah">*</span></label>
-                                            <select class="form-select" name="prodi" aria-label="Default select example"
-                                                disabled>
-                                                <option value="">-- Pilih Program Studi --</option>
+                                            <select class="form-select" name="prodi"
+                                                aria-label="Default select example">
+                                                <option value="">-- Pilih Jurusan --</option>
+                                                <option value="1">Pendidikan Agama Islam</option>
+                                                <option value="2">Ilmu Al-Qur'an dan Tafsir</option>
+                                                <option value="3">Pendidikan Bahasa Arab</option>
+                                                <option value="4">Komunikasi dan Penyiaran Islam</option>
+                                                <option value="5">Syariah (Akhwal Sakhsiyah)</option>
+                                                <option value="6">Ekonomi Syariah</option>
                                             </select>
                                         </div>
                                     </div>

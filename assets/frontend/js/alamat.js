@@ -3,13 +3,15 @@ $(document).ready(function () {
 	kecAjax();
 });
 
+const base_url = "https://daarulhuffadz.com";
+
 function kabAjax() {
 	$("#prov").change(function () {
 		$("#kab").removeAttr("disabled");
 		var id = $(this).val();
 		$.ajax({
 			type: "POST",
-			url: "https://daarulhuffadz.com/pmb_online/get_kabupaten",
+			url: base_url + "/pmb_online/get_kabupaten",
 			data: {
 				id: id,
 			},
@@ -28,7 +30,7 @@ function kecAjax() {
 		// console.log(id_kec)
 		$.ajax({
 			type: "POST",
-			url: "https://daarulhuffadz.com/pmb_online/get_kecamatan",
+			url: base_url + "/pmb_online/get_kecamatan",
 			data: {
 				id: id,
 			},
@@ -39,6 +41,3 @@ function kecAjax() {
 		});
 	});
 }
-
-
-

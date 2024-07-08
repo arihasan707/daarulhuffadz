@@ -350,6 +350,7 @@ class Pmb_online extends CI_Controller
 
         //data
         $prog = $this->input->post('prog');
+        $jalur = $this->input->post('jalur');
         $sistem = $this->input->post('sistem');
         $prodi = $this->input->post('prodi');
         $nama = $this->input->post('nama');
@@ -448,6 +449,7 @@ class Pmb_online extends CI_Controller
 
         $data['temp'] = [
             'prog' => $prog,
+            'jalur' => $jalur,
             'sistem' => $sistem,
             'prodi' => $prodi,
             'nama' => $nama,
